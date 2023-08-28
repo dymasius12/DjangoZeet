@@ -2,7 +2,7 @@
 from pathlib import Path
 import os
 #add heroku library below
-import django_heroku
+import django_on_heroku
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -119,7 +119,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root/')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root/')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 
-django_heroku.settings(local())
+django_on_heroku.settings(local())
 #STATICFILES_DIRS = [
 #    BASE_DIR / "static",
 #]
